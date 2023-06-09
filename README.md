@@ -1,9 +1,12 @@
-# DEVENV: An all-in-one development environment docker image
+# DevEnv
+
+### An all-in-one development environment docker image
 
 This image is meant to be an all-in-one dev environment image that's bundled with some common tooling.
 
 It's bundled with:
 
+- docker-ce-cli
 - zsh + ohmyzsh + powerlevel10k theme
 - python2 + pip
 - python3 + pip3

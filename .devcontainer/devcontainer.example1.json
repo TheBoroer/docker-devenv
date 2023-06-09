@@ -1,0 +1,9 @@
+{
+  "name": "Example: run via dockerhub image",
+  "image": "boro/devenv:latest",
+
+  "runArgs": ["--add-host=host.docker.internal:host-gateway"],
+  "mounts": [
+    "source=/var/run/docker.sock,target=/var/run/docker-host.sock,type=bind"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Example: build from Dockerfile",
+  "build": {
+    "context": "..",
+    "dockerfile": "../Dockerfile"
+  },
+
+  "runArgs": ["--add-host=host.docker.internal:host-gateway"],
+  "mounts": [
+    "source=/var/run/docker.sock,target=/var/run/docker-host.sock,type=bind"
+  ]
+}
